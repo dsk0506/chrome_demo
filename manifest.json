@@ -1,0 +1,17 @@
+{
+  "manifest_version" : 2, // 必须有
+  "name": "费控测试扩展程序",
+  "version": "1.0.0",
+  "description": "费控技术开发团队",
+  "permissions": [
+    "tabs", "<all_urls>"
+  ],
+  "background": { // 后端一直运行的js，全局的，生命周期从浏览器打开到浏览器关闭
+    //"scripts": ["background.js"]
+  },
+  "browser_action" : { // 扩展地址栏右侧一个图标，点击出现default_popup指定的页面
+    "default_title": "费控测试扩展",
+    "default_icon": "icon.png",
+    "default_popup" : "popup.html"
+  }
+}
